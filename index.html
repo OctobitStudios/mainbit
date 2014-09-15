@@ -1,39 +1,79 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Octobit LLC</title>
-    <link href='css/main.css' rel='stylesheet' type='text/css'>
-    <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="author" content="Mikel King" />
+    <meta name="description" content="" />
+    <meta name="keywords"  content="octobit" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="scripts/lib/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu'
+            });
+        });
+    </script>
+
 </head>
 <body>
-<div class="wrapper">
-    <div class="main">
-
-        <section class="page1">
-            <div class="page_container">
-                <h1>OCTOBIT</h1>
-                <h2>Just 2 guys who like making things</h2>
+<ul id="menu">
+    <li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+    <li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+</ul>
+<div id="fullpage">
+    <div class="section " id="section0">
+        <h1>OCTOBIT</h1>
+        <p>Just 2 guys who like making things</p>
+    </div>
+    <div class="section" id="section1">
+        <div class="slide">
+            <div class="intro">
+                <h1>Portfolio 1</h1>
+                <p></p>
             </div>
-        </section>
 
-        <section class="page2">
-            <div class="page_container">
-                <h1>Portfolio</h1>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <h1>Portfolio 2</h1>
             </div>
-        </section>
-
-        <section class="page3">
-            <div class="page_container">
-                <h1>About Us</h1>
-
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <h1>Portfolio 3</h1>
             </div>
-        </section>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <h1>Portfolio 4</h1>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <div class="intro">
+            <h1>Section 2</h1>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="intro">
+            <h1>Section 3</h1>
+        </div>
     </div>
 </div>
+
 </body>
-<!-- data-main attribute tells require.js to load scripts/main.js after require.js loads. -->
-<script async=true data-main="scripts/main" src="scripts/require.js"></script>
 </html>
