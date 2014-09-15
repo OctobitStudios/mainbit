@@ -1,0 +1,455 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+/* line 4, ../sass/_base.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 9, ../sass/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 12, ../sass/_base.scss */
+table {
+  border-spacing: 0;
+}
+
+/* line 15, ../sass/_base.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 18, ../sass/_base.scss */
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 22, ../sass/_base.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 25, ../sass/_base.scss */
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 30, ../sass/_base.scss */
+caption, th {
+  text-align: left;
+}
+
+/* line 34, ../sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+
+/* line 41, ../sass/_base.scss */
+q:before, q:after {
+  content: '';
+}
+
+/* line 44, ../sass/_base.scss */
+abbr, acronym {
+  border: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+/* line 50, ../sass/_base.scss */
+body {
+  font-family: arial,helvetica;
+  color: #333;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 55, ../sass/_base.scss */
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  position: relative;
+}
+
+/* line 61, ../sass/_base.scss */
+h1 {
+  font-size: 6em;
+}
+
+/* line 64, ../sass/_base.scss */
+p {
+  font-size: 2em;
+}
+
+/* line 67, ../sass/_base.scss */
+.intro p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
+/* line 72, ../sass/_base.scss */
+.section {
+  text-align: center;
+}
+
+/* line 75, ../sass/_base.scss */
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  color: #000;
+}
+
+/* line 80, ../sass/_base.scss */
+#menu li.active {
+  color: #fff;
+}
+
+/* line 83, ../sass/_base.scss */
+#menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 87, ../sass/_base.scss */
+#menu li.active a:hover {
+  color: #000;
+}
+
+/* line 90, ../sass/_base.scss */
+#menu li:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* line 93, ../sass/_base.scss */
+#menu li a,
+#menu li.active a {
+  padding: 10px 10px;
+  display: block;
+}
+
+/* line 98, ../sass/_base.scss */
+#menu li.active a {
+  color: #fff;
+}
+
+/* line 101, ../sass/_base.scss */
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ * fullPage 2.1.9
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+/* line 8, ../sass/_fullPage.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*Avoid flicker on slides transitions for mobile phones #336 */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 16, ../sass/_fullPage.scss */
+#superContainer {
+  height: 100%;
+  position: relative;
+  /* Touch detection for Windows 8 */
+  -ms-touch-action: none;
+  /* IE 11 on Windows Phone 8.1*/
+  touch-action: none;
+}
+
+/* line 26, ../sass/_fullPage.scss */
+.fp-section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  /* Safari<=5 Android<=3 */
+  -moz-box-sizing: border-box;
+  /* <=28 */
+  box-sizing: border-box;
+}
+
+/* line 32, ../sass/_fullPage.scss */
+.fp-slide {
+  float: left;
+}
+
+/* line 35, ../sass/_fullPage.scss */
+.fp-slide, .fp-slidesContainer {
+  height: 100%;
+  display: block;
+}
+
+/* line 39, ../sass/_fullPage.scss */
+.fp-slides {
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  transition: all 0.3s ease-out;
+}
+
+/* line 47, ../sass/_fullPage.scss */
+.fp-section.fp-table, .fp-slide.fp-table {
+  display: table;
+  width: 100%;
+}
+
+/* line 51, ../sass/_fullPage.scss */
+.fp-tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 57, ../sass/_fullPage.scss */
+.fp-slidesContainer {
+  float: left;
+  position: relative;
+}
+
+/* line 61, ../sass/_fullPage.scss */
+.fp-controlArrow {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -38px;
+}
+
+/* line 71, ../sass/_fullPage.scss */
+.fp-controlArrow.fp-prev {
+  left: 15px;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+/* line 77, ../sass/_fullPage.scss */
+.fp-controlArrow.fp-next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #fff;
+}
+
+/* line 82, ../sass/_fullPage.scss */
+.fp-scrollable {
+  overflow: scroll;
+}
+
+/* line 85, ../sass/_fullPage.scss */
+.fp-easing {
+  -webkit-transition: all 0.7s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  transition: all 0.7s ease-out;
+}
+
+/* line 89, ../sass/_fullPage.scss */
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+}
+
+/* line 96, ../sass/_fullPage.scss */
+#fp-nav.right {
+  right: 17px;
+}
+
+/* line 99, ../sass/_fullPage.scss */
+#fp-nav.left {
+  left: 17px;
+}
+
+/* line 102, ../sass/_fullPage.scss */
+.fp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1;
+}
+
+/* line 108, ../sass/_fullPage.scss */
+.fp-slidesNav.bottom {
+  bottom: 17px;
+}
+
+/* line 111, ../sass/_fullPage.scss */
+.fp-slidesNav.top {
+  top: 17px;
+}
+
+/* line 114, ../sass/_fullPage.scss */
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 119, ../sass/_fullPage.scss */
+#fp-nav li,
+.fp-slidesNav li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+
+/* line 127, ../sass/_fullPage.scss */
+.fp-slidesNav li {
+  display: inline-block;
+}
+
+/* line 130, ../sass/_fullPage.scss */
+#fp-nav li a,
+.fp-slidesNav li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 140, ../sass/_fullPage.scss */
+#fp-nav li .active span,
+.fp-slidesNav .active span {
+  background: #333;
+}
+
+/* line 144, ../sass/_fullPage.scss */
+#fp-nav span,
+.fp-slidesNav span {
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* line 156, ../sass/_fullPage.scss */
+.fp-tooltip {
+  position: absolute;
+  top: -2px;
+  color: #fff;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+  white-space: nowrap;
+  max-width: 220px;
+}
+
+/* line 165, ../sass/_fullPage.scss */
+.fp-tooltip.right {
+  right: 20px;
+}
+
+/* line 168, ../sass/_fullPage.scss */
+.fp-tooltip.left {
+  left: 20px;
+}
