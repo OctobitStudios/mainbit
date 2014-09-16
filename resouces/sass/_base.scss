@@ -1,4 +1,15 @@
 @CHARSET "ISO-8859-1";
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
 /* Reset CSS
  * --------------------------------------- */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
@@ -36,7 +47,10 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 100%;
     margin:0;
     padding:0;
-    color:#444;
+    color: $headerColor;
+}
+p{
+  color: $primaryTextColor;
 }
 q:before,q:after {
     content:'';
@@ -49,8 +63,7 @@ abbr,acronym { border: 0;
  * --------------------------------------- */
 body{
     font-family: arial,helvetica;
-    color: #333;
-    color: rgba(0,0,0,0.5);
+    background-color: $backgroundColor;
 }
 .wrap{
     margin-left: auto;
@@ -75,28 +88,32 @@ p{
 #menu li {
     display:inline-block;
     margin: 10px;
-    color: #000;
+    color: $secondaryTextColor;
 }
 #menu li.active{
-    color: #fff;
+    color: $activeColor;
 }
 #menu li a{
     text-decoration:none;
-    color: #000;
+    color: $secondaryTextColor;
 }
+
+#menu li a:hover{
+  text-decoration:none;
+  color: $primaryTextColor;
+}
+
 #menu li.active a:hover{
-    color: #000;
+    color: $highlightColor;
 }
-#menu li:hover{
-    background: rgba(255,255,255, 0.8);
-}
+
 #menu li a,
 #menu li.active a{
     padding: 10px 10px;
     display:block;
 }
 #menu li.active a{
-    color: #fff;
+    color: $activeColor;
 }
 #menu{
     position:fixed;
