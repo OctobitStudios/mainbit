@@ -91,7 +91,7 @@ p{
     text-align:center;
 }
 #menu li {
-    @extend .mediumFont;;
+    @extend .mediumFont;
     display:inline-block;
 }
 
@@ -137,5 +137,6 @@ p{
 
 #subTitle{
   color: $subTitleColor;
+  text-shadow: 0px -1px 2px $subTitleGlowColor;
   font-weight: bold;
 }
