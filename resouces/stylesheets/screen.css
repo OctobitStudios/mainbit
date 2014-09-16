@@ -85,22 +85,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 26, ../sass/_font.scss */
 .largeFont, h1 {
-  font-size: 12em;
-}
-
-/* line 30, ../sass/_font.scss */
-.mediumFont, h2 {
   font-size: 8em;
 }
 
+/* line 30, ../sass/_font.scss */
+.mediumFont, h2, #menu li {
+  font-size: 2em;
+}
+
 /* line 34, ../sass/_font.scss */
-.smallFont, p, #menu li {
-  font-size: 3em;
+.smallFont, p {
+  font-size: 1em;
 }
 
 /* line 38, ../sass/_font.scss */
 .extraSmallFont {
-  font-size: 1em;
+  font-size: 0.5em;
 }
 
 @CHARSET "ISO-8859-1";
