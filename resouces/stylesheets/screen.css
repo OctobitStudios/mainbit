@@ -67,6 +67,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+@font-face {
+  font-family: 'SIMPLIFICA';
+  src: url("../fonts/SIMPLIFICA/SIMPLIFICA.ttf");
+}
+@font-face {
+  font-family: 'Adamas-Regular';
+  src: url("../fonts/Adamas-Regular/Adamas-Regular.otf");
+}
 @CHARSET "ISO-8859-1";
 /* line 2, ../sass/_base.scss */
 video {
@@ -156,7 +164,7 @@ abbr, acronym {
  * --------------------------------------- */
 /* line 64, ../sass/_base.scss */
 body {
-  font-family: arial,helvetica;
+  font-family: 'SIMPLIFICA',arial,helvetica;
   background-color: #231f20;
 }
 
@@ -170,7 +178,7 @@ body {
 
 /* line 74, ../sass/_base.scss */
 h1 {
-  font-size: 6em;
+  font-size: 12em;
 }
 
 /* line 77, ../sass/_base.scss */
@@ -241,6 +249,12 @@ p {
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+/* line 129, ../sass/_base.scss */
+#mainTitle {
+  font-family: 'Adamas-Regular';
+  color: #ffffff;
 }
 
 /**

@@ -62,7 +62,7 @@ abbr,acronym { border: 0;
 /* Custom CSS
  * --------------------------------------- */
 body{
-    font-family: arial,helvetica;
+    font-family: 'SIMPLIFICA',arial,helvetica;
     background-color: $backgroundColor;
 }
 .wrap{
@@ -72,7 +72,7 @@ body{
     position: relative;
 }
 h1{
-    font-size: 6em;
+    font-size: 12em;
 }
 p{
     font-size: 2em;
@@ -124,4 +124,9 @@ p{
     width: 100%;
     padding: 0;
     margin:0;
+}
+
+#mainTitle{
+  font-family: 'Adamas-Regular';
+  color: $titleColor;
 }
