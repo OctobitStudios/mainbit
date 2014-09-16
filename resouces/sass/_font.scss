@@ -7,3 +7,34 @@
   font-family: 'Adamas-Regular';
   src: url('../fonts/Adamas-Regular/Adamas-Regular.otf');
 }
+
+@font-face {
+  font-family: 'CODE-Light';
+  src: url('../fonts/code/CODE_Light.otf');
+}
+
+@font-face {
+  font-family: 'CODE-Bold';
+  src: url('../fonts/code/CODE_Bold.otf');
+}
+
+$largeFont: 12em;
+$mediumFont: 8em;
+$smallFont: 3em;
+$extraSmallFont: 1em;
+
+.largeFont{
+  font-size: $largeFont;
+}
+
+.mediumFont{
+  font-size: $mediumFont;
+}
+
+.smallFont{
+  font-size: $smallFont;
+}
+
+.extraSmallFont{
+  font-size: $extraSmallFont;
+}

@@ -75,9 +75,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: 'Adamas-Regular';
   src: url("../fonts/Adamas-Regular/Adamas-Regular.otf");
 }
+@font-face {
+  font-family: 'CODE-Light';
+  src: url("../fonts/code/CODE_Light.otf");
+}
+@font-face {
+  font-family: 'CODE-Bold';
+  src: url("../fonts/code/CODE_Bold.otf");
+}
+/* line 26, ../sass/_font.scss */
+.largeFont, h1 {
+  font-size: 12em;
+}
+
+/* line 30, ../sass/_font.scss */
+.mediumFont, h2 {
+  font-size: 8em;
+}
+
+/* line 34, ../sass/_font.scss */
+.smallFont, p, #menu li {
+  font-size: 3em;
+}
+
+/* line 38, ../sass/_font.scss */
+.extraSmallFont {
+  font-size: 1em;
+}
+
 @CHARSET "ISO-8859-1";
 /* line 2, ../sass/_base.scss */
-video {
+.backgroundVideo {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -92,83 +120,87 @@ video {
 /* Reset CSS
  * --------------------------------------- */
 /* line 15, ../sass/_base.scss */
+body {
+  font-size: 100%;
+}
+
+/* line 18, ../sass/_base.scss */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
 form, fieldset, input, textarea, p, blockquote, th, td {
   padding: 0;
   margin: 0;
 }
 
-/* line 20, ../sass/_base.scss */
+/* line 23, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 23, ../sass/_base.scss */
+/* line 26, ../sass/_base.scss */
 table {
   border-spacing: 0;
 }
 
-/* line 26, ../sass/_base.scss */
+/* line 29, ../sass/_base.scss */
 fieldset, img {
   border: 0;
 }
 
-/* line 29, ../sass/_base.scss */
+/* line 32, ../sass/_base.scss */
 address, caption, cite, code, dfn, em, strong, th, var {
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 33, ../sass/_base.scss */
+/* line 36, ../sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 36, ../sass/_base.scss */
+/* line 39, ../sass/_base.scss */
 ol, ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 41, ../sass/_base.scss */
+/* line 44, ../sass/_base.scss */
 caption, th {
   text-align: left;
 }
 
-/* line 45, ../sass/_base.scss */
+/* line 48, ../sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-size: 100%;
   margin: 0;
   padding: 0;
-  color: #0D6966;
+  color: #ffffff;
 }
 
-/* line 52, ../sass/_base.scss */
+/* line 54, ../sass/_base.scss */
 p {
-  color: #9AABA1;
+  color: #ffffff;
 }
 
-/* line 55, ../sass/_base.scss */
+/* line 57, ../sass/_base.scss */
 q:before, q:after {
   content: '';
 }
 
-/* line 58, ../sass/_base.scss */
+/* line 60, ../sass/_base.scss */
 abbr, acronym {
   border: 0;
 }
 
 /* Custom CSS
  * --------------------------------------- */
-/* line 64, ../sass/_base.scss */
+/* line 66, ../sass/_base.scss */
 body {
-  font-family: 'SIMPLIFICA',arial,helvetica;
+  font-family: 'CODE-Bold',arial,helvetica;
   background-color: #231f20;
 }
 
-/* line 68, ../sass/_base.scss */
+/* line 70, ../sass/_base.scss */
 .wrap {
   margin-left: auto;
   margin-right: auto;
@@ -176,55 +208,38 @@ body {
   position: relative;
 }
 
-/* line 74, ../sass/_base.scss */
-h1 {
-  font-size: 12em;
-}
-
-/* line 77, ../sass/_base.scss */
-h2 {
-  font-size: 10em;
-}
-
-/* line 80, ../sass/_base.scss */
+/* line 82, ../sass/_base.scss */
 p {
-  font-size: 2em;
+  font-family: 'CODE-Light',arial,helvetica;
 }
 
-/* line 83, ../sass/_base.scss */
+/* line 86, ../sass/_base.scss */
 .intro p {
   width: 50%;
   margin: 0 auto;
-  font-size: 1.5em;
 }
 
-/* line 88, ../sass/_base.scss */
+/* line 90, ../sass/_base.scss */
 .section {
   text-align: center;
 }
 
-/* line 91, ../sass/_base.scss */
+/* line 93, ../sass/_base.scss */
 #menu li {
   display: inline-block;
-  margin: 10px;
-  color: #617774;
 }
 
-/* line 96, ../sass/_base.scss */
-#menu li.active {
-  color: #DAA152;
-}
-
-/* line 99, ../sass/_base.scss */
+/* line 98, ../sass/_base.scss */
 #menu li a {
   text-decoration: none;
-  color: #617774;
+  color: #777777;
+  transition: color 0.5s ease;
 }
 
 /* line 104, ../sass/_base.scss */
 #menu li a:hover {
   text-decoration: none;
-  color: #9AABA1;
+  color: #ffffff;
 }
 
 /* line 109, ../sass/_base.scss */
@@ -235,7 +250,7 @@ p {
 /* line 113, ../sass/_base.scss */
 #menu li a,
 #menu li.active a {
-  padding: 10px 10px;
+  padding: .5em;
   display: block;
 }
 
@@ -252,14 +267,21 @@ p {
   height: 40px;
   z-index: 70;
   width: 100%;
-  padding: 0;
+  font-size: 100%;
   margin: 0;
 }
 
 /* line 132, ../sass/_base.scss */
 #mainTitle {
   font-family: 'Adamas-Regular';
+  text-shadow: 0px 0px 3px #a36d23;
+  color: #DAA152;
+}
+
+/* line 138, ../sass/_base.scss */
+#subTitle {
   color: #ffffff;
+  font-weight: bold;
 }
 
 /**
@@ -493,20 +515,66 @@ html, body {
 
 /* line 4, ../sass/_section.scss */
 #section1 {
-  background-color: #231f20;
+  background: -moz-linear-gradient(top, rgba(35, 31, 32, 0) 0%, rgba(35, 31, 32, 0.33) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(35, 31, 32, 0)), color-stop(100%, rgba(35, 31, 32, 0.33)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(35, 31, 32, 0) 0%, rgba(35, 31, 32, 0.33) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(35, 31, 32, 0) 0%, rgba(35, 31, 32, 0.33) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(35, 31, 32, 0) 0%, rgba(35, 31, 32, 0.33) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(35, 31, 32, 0) 0%, rgba(35, 31, 32, 0.33) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00231f20', endColorstr='#54231f20',GradientType=0 );
+  /* IE6-9 */
 }
 
-/* line 8, ../sass/_section.scss */
+/* line 14, ../sass/_section.scss */
 #section2 {
-  background-color: #231f20;
+  background: -moz-linear-gradient(top, rgba(35, 31, 32, 0.33) 0%, rgba(35, 31, 32, 0.66) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(35, 31, 32, 0.33)), color-stop(100%, rgba(35, 31, 32, 0.66)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(35, 31, 32, 0.33) 0%, rgba(35, 31, 32, 0.66) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(35, 31, 32, 0.33) 0%, rgba(35, 31, 32, 0.66) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(35, 31, 32, 0.33) 0%, rgba(35, 31, 32, 0.66) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(35, 31, 32, 0.33) 0%, rgba(35, 31, 32, 0.66) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54231f20', endColorstr='#a8231f20',GradientType=0 );
+  /* IE6-9 */
 }
 
-/* line 12, ../sass/_section.scss */
+/* line 24, ../sass/_section.scss */
 #section3 {
-  background-color: #231f20;
+  background: -moz-linear-gradient(top, rgba(35, 31, 32, 0.66) 0%, #231f20 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(35, 31, 32, 0.66)), color-stop(100%, #231f20));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(35, 31, 32, 0.66) 0%, #231f20 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(35, 31, 32, 0.66) 0%, #231f20 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(35, 31, 32, 0.66) 0%, #231f20 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(35, 31, 32, 0.66) 0%, #231f20 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8231f20', endColorstr='#231f20',GradientType=0 );
+  /* IE6-9 */
 }
 
 /* line 1, ../sass/_z-index.scss */
 #fullPage {
   z-index: 1;
+}
+
+@media (max-width: 600px) {
+  /* line 2, ../sass/_responsive.scss */
+  .backgroundVideo {
+    display: none;
+  }
 }
