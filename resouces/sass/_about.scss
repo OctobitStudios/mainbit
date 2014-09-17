@@ -1,0 +1,15 @@
+#team {
+  .bio {
+    float: left;
+    width: 50%;
+    .avatar {
+      margin: 15px;
+    }
+    .name {
+      display: block;
+    }
+    .title {
+      font-size: 80%;
+    }
+  }
+}
