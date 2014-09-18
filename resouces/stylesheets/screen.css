@@ -95,7 +95,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 34, ../sass/_font.scss */
 .smallFont, p {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 /* line 38, ../sass/_font.scss */
@@ -282,7 +282,7 @@ p {
 /* line 139, ../sass/_base.scss */
 #subTitle {
   color: #ffffff;
-  text-shadow: 0px -1px 2px #231f20;
+  text-shadow: 0px 0px 1px #231f20;
   font-weight: bold;
 }
 
