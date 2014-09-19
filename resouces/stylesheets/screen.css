@@ -95,17 +95,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 34, ../sass/_font.scss */
 .mediumFont, #menu li {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 /* line 38, ../sass/_font.scss */
 .smallFont, p {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 /* line 42, ../sass/_font.scss */
 .extraSmallFont {
-  font-size: 0.5em;
+  font-size: 1em;
 }
 
 /**
@@ -607,7 +607,7 @@ html, body {
 }
 /* line 14, ../sass/_about.scss */
 #team .bio .social {
-  color: #fff;
+  color: #231f20;
 }
 /* line 17, ../sass/_about.scss */
 #team .bio polygon {
