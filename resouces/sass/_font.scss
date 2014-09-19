@@ -18,11 +18,15 @@
   src: url('../fonts/code/CODE_Bold.otf');
 }
 
-$largeFont: 8em;
+$extraLargeFont: 8em;
+$largeFont: 5em;
 $mediumFont: 2em;
 $smallFont: 1.5em;
 $extraSmallFont: .5em;
 
+.extraLargeFont{
+  font-size: $extraLargeFont;
+}
 .largeFont{
   font-size: $largeFont;
 }
